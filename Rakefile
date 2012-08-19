@@ -9,6 +9,7 @@ Echoe.new('mram-eveapi') do |g|
   g.author          = "Markus Rambossek"
   g.email           = "git@rambossek.at"
   g.ignore_pattern  = ["tmp/*", "script/*"]
+  g.runtime_dependencies = ["httpclient", "nokogiri"]
 end
 
 Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each { |ext| load ext }
